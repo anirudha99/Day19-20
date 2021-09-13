@@ -26,8 +26,11 @@ public class AlgorithmMain {
 //		System.out.println("Prime number algorithm");
 //		PrimeNumbers.primeNumber();
 		
-		System.out.println("Anagram and Palindrome - Prime number algorithm");
-		AnagramPalindrome.primeNumber();
+//		System.out.println("Anagram and Palindrome - Prime number algorithm");
+//		AnagramPalindrome.primeNumber();
+		
+		System.out.println("Find your number algorithm");
+		FindYourNumber.getInput(Integer.parseInt(args[0]));
 
 	}
 
