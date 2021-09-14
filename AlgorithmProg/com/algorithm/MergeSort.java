@@ -7,20 +7,29 @@ public class MergeSort {
 	
 	static Scanner sc = new Scanner(System.in);
 	
+    /**
+     * set size
+     * Get user input
+     */
     public static void getArray() {
     System.out.println("Enter the size of array");
-    int n=sc.nextInt();
-    String values[]=new String[n];
+    int n = sc.nextInt();
+    String values[] = new String[n];
     System.out.println("Enter the array");
-    for(int i=0;i<n;i++) {
-    	values[i]=sc.next();
+    for(int i = 0;i<n;i++) {
+    	values[i] = sc.next();
     }
-       
         mergeSort(values, 0, values.length - 1);
         
         System.out.println("Result " + Arrays.toString(values));
     }
     
+    /**
+     * Sort function
+     * @param arr
+     * @param start
+     * @param end
+     */
     public static void mergeSort(String[] arr, int start, int end) {
 		if (start < end) {
 			int mid = (start + end) / 2;
@@ -31,6 +40,13 @@ public class MergeSort {
 		}
 	}
     
+    /**
+     * Merge method to combine the array
+     * @param arr
+     * @param start
+     * @param mid
+     * @param end
+     */
     private static void merge(String[] arr, int start, int mid, int end) {
 		int p = start, q = mid + 1;
 		String[] newArr = new String[end - start + 1];

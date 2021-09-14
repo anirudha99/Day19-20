@@ -8,6 +8,10 @@ public class InsertionSort {
 	static int n;
 	static Scanner sc = new Scanner(System.in);
 
+	/**
+	 * Set size
+	 * Read input from user
+	 */
 	public static void read() {
 		System.out.println("Enter the number of elements in the array");
 		n = sc.nextInt();
@@ -20,6 +24,9 @@ public class InsertionSort {
 		print();
 	}
 
+	/**
+	 * Method to sort using insertion sort
+	 */
 	public static void insertionSort() {
 
 		for(int i=1;i<n;i++) {
@@ -36,6 +43,9 @@ public class InsertionSort {
 		print();
 	}
 	
+	/**
+	 * Print sorted array
+	 */
 	private static void print() {
 		for (String string : arr) {
 			System.out.print(string+" ");

@@ -2,6 +2,9 @@ package com.algorithm;
 
 public class AnagramPalindrome {
 
+	/**
+	 * Method to check prime number
+	 */
 	public static void primeNumber() {
 
 		for (int i = 2; i <= 1000; i++) {
@@ -18,6 +21,10 @@ public class AnagramPalindrome {
 		}
 	}
 	
+	/**
+	 * Method to check palindrome
+	 * @param i
+	 */
 	private static void palindrome(int i) {
 		int rem, num, reverseNum = 0;
 		num = i;

@@ -2,6 +2,9 @@ package com.algorithm;
 
 public class PrimeNumbers {
 
+	/**
+	 * Method to check prime number
+	 */
 	public static void primeNumber() {
 
 		System.out.println("Prime numbers between 0 and 1000 are");

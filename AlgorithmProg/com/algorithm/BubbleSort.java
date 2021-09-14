@@ -8,6 +8,10 @@ public class BubbleSort {
 	static int n;
 	static Scanner sc = new Scanner(System.in);
 
+	/**
+	 * Set size
+	 * Read elements from the user
+	 */
 	public static void read() {
 		System.out.println("Enter the number of elements in the array");
 		n = sc.nextInt();
@@ -20,6 +24,9 @@ public class BubbleSort {
 		print();
 	}
 
+	/**
+	 * bubble sort method to sort
+	 */
 	public static void bubbleSort() {
 		int len = arr.length;
 		int temp;
@@ -39,6 +46,9 @@ public class BubbleSort {
 
 	}
 
+	/**
+	 * Print sorted array
+	 */
 	private static void print() {
 		for (int i : arr) {
 			System.out.print(i+" ");

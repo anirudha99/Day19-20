@@ -3,6 +3,8 @@ package com.algorithm;
 public class AlgorithmMain {
 	public static void main(String[] args) {
 		
+		//Uncomment the program which you want to run
+		
 //		String str = "ABC";
 //		int n = str.length();
 //		PermutationString.permutation(str, 0, n-1);

@@ -7,6 +7,10 @@ import java.util.Scanner;
 public class BinarySearch {
 	static Scanner sc = new Scanner(System.in);
 
+	/**
+	 * Reads the text file and then stores each word in an array with space being the
+	 * delimiter
+	 */
 	public static void readFile() {
 		String key = getKey();
 
@@ -30,6 +34,12 @@ public class BinarySearch {
 		}
 	}
 
+	/**
+	 * Sort function to sort in ascending order
+	 * Calls binary search next
+	 * @param arr
+	 * @param key
+	 */
 	private static void sort(String[] arr, String key) {
 		System.out.println("Unsorted array");
 
@@ -60,12 +70,22 @@ public class BinarySearch {
 
 	}
 
+	/**
+	 * To get the key from user
+	 * @return
+	 */
 	private static String getKey() {
 		System.out.println("Enter the key to search");
 		String key = sc.nextLine();
 		return key;
 	}
 
+	/**
+	 * Binary search method
+	 * search key in the list
+	 * @param arr
+	 * @param key
+	 */
 	private static void binarysearch(String[] arr, String key) {
 		int first = 0, last = arr.length - 1;
 		while (first <= last) {

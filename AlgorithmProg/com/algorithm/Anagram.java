@@ -9,14 +9,17 @@ public class Anagram {
 	static Scanner sc = new Scanner(System.in);
 	
 	
+	/**
+	 * Method to check the anagram
+	 */
 	public static void anagram() {
 		System.out.println("Enter the first string");
 		str1 = sc.next();
 		System.out.println("Enter the second string");
 		str2 = sc.next();
 
-		str1 = str1.toLowerCase();
-		str2 = str2.toLowerCase();
+		str1 = str1.toLowerCase(); 		//convert into lower case
+		str2 = str2.toLowerCase();		//convert into lower case
 		sc.close();
 
 		int len1 = str1.length();
@@ -28,7 +31,7 @@ public class Anagram {
 			char arr1[] = str1.toCharArray();
 			char arr2[] = str2.toCharArray();
 
-			arr1 = sort(arr1);
+			arr1 = sort(arr1);		//sort
 			arr2 = sort(arr2);
 
 			if (Arrays.equals(arr1, arr2)) {
@@ -39,6 +42,11 @@ public class Anagram {
 		}
 	}
 	
+	/**
+	 * Sort method
+	 * @param arr
+	 * @return
+	 */
 	private static char[] sort(char[] arr) {
 
 		char temp;

@@ -4,6 +4,7 @@ public class PermutationString {
 
 	/**
 	 * permutation function
+	 * To get all permutated options
 	 * @param str string to calculate permutation for
 	 * @param l starting index
 	 * @param r end index
@@ -23,6 +24,13 @@ public class PermutationString {
 		}
 	}
 
+	/**
+	 * Swap method to swap elements
+	 * @param a
+	 * @param i
+	 * @param j
+	 * @return
+	 */
 	public static String swap(String a, int i, int j)
 	{
 		char temp;
