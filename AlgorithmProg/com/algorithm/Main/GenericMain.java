@@ -1,8 +1,10 @@
-package com.algorithm;
+package com.algorithm.Main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+
+import com.algorithm.Generics;
 
 public class GenericMain {
 

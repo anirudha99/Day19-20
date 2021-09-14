@@ -1,4 +1,6 @@
-package com.algorithm;
+package com.algorithm.Main;
+
+import com.algorithm.FindYourNumber;
 
 public class AlgorithmMain {
 	public static void main(String[] args) {
