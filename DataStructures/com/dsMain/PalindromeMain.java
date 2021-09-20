@@ -6,7 +6,7 @@ public class PalindromeMain {
 
 	public static void main(String[] args) {
 		
-		Palindrome.palindromeChecker();
+		Palindrome.checkPalindrome();
 	}
 
 }
