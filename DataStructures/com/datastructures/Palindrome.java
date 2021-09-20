@@ -1,39 +1,34 @@
 package com.datastructures;
 
+import java.util.Scanner;
+
 public class Palindrome {
 
-	public static void palindromeChecker() {
+	static Scanner scanner = new Scanner(System.in);
 
-		String str = "madam";
-		String revFront = "";
-		String revRear = "";
+	static Deque<Character> deque = new Deque<>();
 
-		Deque<Character> deque = new Deque<>(10);
-		// inserting element in deque
-		for (int i = 0; i < str.length(); i++) {
-			deque.insertRear(str.charAt(i));
+	/**
+	 * Ask users to enter a string and checks if string is panindrome or not
+	 */
+	public static void checkPalindrome() {
+		System.out.println("Enter the string");
+		String string = scanner.next();
+		string = string.toLowerCase();
+		char[] charArray = string.toCharArray();
+		String reversedString = "";
+		for (int i = 0; i < charArray.length; i++) {
+			deque.addFront(charArray[i]);
 		}
-		// removing element from rear and getting the rear values
-		for (int i = 0; i < str.length(); i++) {
-			revRear += deque.getRear();
-			deque.deleteRear();
+
+		for (int i = 0; i < charArray.length; i++) {
+			reversedString += deque.removeFront();
 		}
-		// inserting element again in deque
-		for (int i = 0; i < str.length(); i++) {
-			deque.insertRear(str.charAt(i));
-		}
-		// removing element from front and getting the front values
-		for (int i = 0; i < str.length(); i++) {
-			revFront += deque.getFront();
-			deque.deleteFront();
-		}
-		// System.out.println("Front delete : " + revFront);
-		System.out.println("Rear delete : " + revRear);
-		System.out.println("Front delete : " + revFront);
-		if (revRear.equals(revFront)) {
-			System.out.println("String is palindrome");
+
+		if (string.equals(reversedString)) {
+			System.out.println("String is a palindrome");
 		} else {
-			System.out.println("String is not palindrome");
+			System.out.println("Not a palindrome");
 		}
 	}
 }
